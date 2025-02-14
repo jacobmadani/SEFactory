@@ -4,4 +4,4 @@ print("Ana yaacoub")
 #test
 print("ur turn")
 # taking name
-x=input(int("enter your name"))
+name=input("enter your name")
