@@ -5,3 +5,4 @@ print("Ana yaacoub")
 print("ur turn")
 # taking name
 x=input(int("enter your name"))
+print("khras")
