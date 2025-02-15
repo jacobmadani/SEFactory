@@ -1,8 +1,4 @@
-#This is a print statement
-print("Bye world") 
-print("Ana yaacoub")
-#test
-print("ur turn")
-# taking name
-name=input("enter your name")
-print("khras")
+age=int(input("Enter your age:"))
+if age>18:
+    print("You are an adult")
+print("Program is done")    
