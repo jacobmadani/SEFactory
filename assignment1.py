@@ -8,3 +8,7 @@ electricityper=float(input("Electricity(%): "))
 savings=salary*(savingsper/100)
 rent=salary*(rentper/100)
 electricity=salary*(electricityper/100)
+
+print("The ammount allocated to savings is "+str(savings)+"$")
+print("The ammount allocated to rent is "+str(rent)+"$")
+print("The ammount allocated to electricity is "+str(electricity)+"$")
