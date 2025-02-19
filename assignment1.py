@@ -4,5 +4,7 @@ print("Please enter the percentages for each:")
 savingsper=float(input("Savings(%): "))
 rentper=float(input("Rent(%): "))
 electricityper=float(input("Electricity(%): "))
+
 savings=salary*(savingsper/100)
 rent=salary*(rentper/100)
+electricity=salary*(electricityper/100)
