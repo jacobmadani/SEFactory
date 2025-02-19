@@ -23,3 +23,6 @@ yrent=rent*12
 yelectricity=electricity*12
 print("Your estimate yearly rent cost is: "+str(yrent)+"$")
 print("Your estimate yearly electricity cost is: "+str(yelectricity)+"$")
+
+fun=pow(salary,2)
+print("Your total salary for the month raised to the power of 2 is: "+str(fun)+"$")
