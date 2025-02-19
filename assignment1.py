@@ -12,3 +12,6 @@ electricity=salary*(electricityper/100)
 print("The ammount allocated to savings is "+str(savings)+"$")
 print("The ammount allocated to rent is "+str(rent)+"$")
 print("The ammount allocated to electricity is "+str(electricity)+"$")
+
+total=savings+rent+electricity
+print("The total amount spent is: "+str(total)+"$") 
