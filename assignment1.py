@@ -14,4 +14,7 @@ print("The ammount allocated to rent is "+str(rent)+"$")
 print("The ammount allocated to electricity is "+str(electricity)+"$")
 
 total=savings+rent+electricity
-print("The total amount spent is: "+str(total)+"$") 
+print("The total amount spent is: "+str(total)+"$")
+
+rem=salary-total
+print("The remainder of your salary is: "+str(rem)+"$")
