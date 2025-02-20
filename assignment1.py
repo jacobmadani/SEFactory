@@ -4,6 +4,7 @@ print("Please enter the percentages for each:")
 savingsper=float(input("Savings(%): "))
 rentper=float(input("Rent(%): "))
 electricityper=float(input("Electricity(%): "))
+
 def salary_calculator(salary,savingsper,rentper,electricityper,value):
     rent=salary*(rentper/100)
     electricity=salary*(electricityper/100)
@@ -30,15 +31,21 @@ def salary_calculator(salary,savingsper,rentper,electricityper,value):
 
     fun=pow(salary,2)
     print("Your total salary for the month raised to the power of 2 is: "+str(fun)+"$")
+    
 msg="Here is your finances for "+str(month)
+print("\n")
 print(msg.center(50)) 
 salary_calculator(salary,savingsper,rentper,electricityper,0) 
 print("\n")
+
 random=input("Would you like to add additional amount?(yes/no): ")
 if random=="yes":
-      value=float(input("How much additional amount would u like to add?"))
-      print("The amounts allocated after adding the new value will be as follow: ")
-      salary_calculator(salary,savingsper,rentper,electricityper,value) 
+        value=float(input("How much additional amount would u like to add?"))
+        print("\n")
+        print("The amounts allocated after adding the new value will be as follow: ")
+        salary_calculator(salary,savingsper,rentper,electricityper,value) 
+        print("\n")
+        print("See you again!")
 else:
-    print("See you again!")
+        print("See you again!")
 
