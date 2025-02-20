@@ -1,11 +1,11 @@
-def salary_calculator():
-    salary=float(input("Please enter your salary: "))
-    month=input("Please enter the name of the month: ")
-    print("Please enter the percentages for each:")
-    savingsper=float(input("Savings(%): "))
-    rentper=float(input("Rent(%): "))
-    electricityper=float(input("Electricity(%): "))
-
+salary=float(input("Please enter your salary: "))
+month=input("Please enter the name of the month: ")
+print("Please enter the percentages for each:")
+savingsper=float(input("Savings(%): "))
+rentper=float(input("Rent(%): "))
+electricityper=float(input("Electricity(%): "))
+def salary_calculator(salary,savingsper,rentper,electricityper,value):
+    salary+=value
     savings=salary*(savingsper/100)
     rent=salary*(rentper/100)
     electricity=salary*(electricityper/100)
@@ -27,10 +27,11 @@ def salary_calculator():
 
     fun=pow(salary,2)
     print("Your total salary for the month raised to the power of 2 is: "+str(fun)+"$")
-salary_calculator() 
+salary_calculator(salary,savingsper,rentper,electricityper,0) 
 random=input("Would you like to add additional amount?(yes/no): ")
 if random=="yes":
-      randad=float(input("How much additional amount would u like to add?"))
+      value=float(input("How much additional amount would u like to add?"))
+      salary_calculator(value)
 else:
     print("See you again!")
 
